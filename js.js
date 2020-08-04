@@ -1,9 +1,8 @@
 let tabsLeft = document.getElementsByClassName("tabs-left")[0],
     tabsRight = document.getElementsByClassName("tabs-right")[0],
-    ticket = document.getElementsByClassName("ticket")[0],
-    ticketTab = document.getElementsByClassName("ticketTab")[0],
-    tabsLeftActive = document.querySelectorAll(".tabs-left.active"),
-    tabsRightActive = document.querySelectorAll(".tabs-right.active");
+    ticket = document.getElementsByClassName("ticket"),
+    ticketTab = document.getElementsByClassName("ticketTab");
+
 
   
  
@@ -11,10 +10,11 @@ let tabsLeft = document.getElementsByClassName("tabs-left")[0],
     tabsRight.addEventListener ("click", function() {
         tabsLeft.classList.remove("active")
         tabsRight.classList.add("active")
-        ticket.style.display ="none"
+        ticket.style.display = "none"
         
-        
+                
     });
+
 
     tabsLeft.addEventListener ("click", function() {
         tabsRight.classList.remove("active")
