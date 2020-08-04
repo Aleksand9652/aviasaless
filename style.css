@@ -31,7 +31,8 @@ body {
     font-family: Open Sans;
     font-style: normal;
     font-weight: 600;
-    font-size: 12px;
+    font-size: 13px;
+    text-transform: uppercase;
 }
 
 .checkbox {
@@ -81,23 +82,32 @@ body {
 }
 .tabs {
     display: flex;
-    
+    cursor: pointer;
 }
 .content {
     display: flex;
 }
-.tabs-left.active {
-margin-top: 0px;
-background: #2196F3;
-color: white;
-padding: 15px 57px;
-font-family: 'Open Sans', sans-serif;
-font-style: regular;
-font-weight: 400;
-font-size: 17px;
-border-bottom-left-radius: 6px;
-border-top-left-radius: 6px;
+.tabs-right.active {
+    background: #2196F3;
+    color: white;   
 }
+.tabs-left.active {
+    background: #2196F3;
+    color: white;
+}
+.tabs-left {
+    background: white;
+    margin-top: 0px;
+    padding: 15px 57px;
+    font-family: 'Open Sans', sans-serif;
+    font-style: regular;
+    font-weight: 400;
+    font-size: 17px;
+    border-bottom-left-radius: 6px;
+    border-top-left-radius: 6px;
+
+}
+
 .tabs-right {
     margin-top: 0px;
     background: white;
@@ -126,10 +136,18 @@ color: #2196F3;
         max-height: 36px;
     }
 .ticket {
+  
     background-color: white;
     margin-top: 20px;
     border-radius: 5px;
 }
+.ticketTab {
+    display: none;
+    background-color: white;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
 .ticket-name {
     margin-top: 20px;
     display: flex;
@@ -157,6 +175,7 @@ color: #2196F3;
     font-size: 14px;
     line-height: 21px;
 }
+
 .ticket-text span:nth-child(2) {
     margin-right: 5px;
 }
@@ -165,5 +184,5 @@ color: #2196F3;
 }
 .ticket-text:last-child {
     margin-bottom: 20px;
-    margin-right: 51px;
+    margin-right: 87px;
 }
