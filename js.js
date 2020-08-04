@@ -11,6 +11,7 @@ let tabsLeft = document.getElementsByClassName("tabs-left")[0],
     tabsRight.addEventListener ("click", function() {
         tabsLeft.classList.remove("active")
         tabsRight.classList.add("active")
+        ticket.style.display ="none"
         
         
     });
